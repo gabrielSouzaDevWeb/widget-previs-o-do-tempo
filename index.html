@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://codepen.io/tarciozemel/pen/OzKrVJ.css">
+    <title>Document</title>
+    <style type="text/css">
+    	.weather{
+    		align-items: center;
+    		display:flex;
+    		flex-direction: column;
+    		justify-content:space-around;
+
+    	}
+    	.weather > div{
+    		margin: 10px 0;
+    	}
+    	.weather__period{
+    		flex:1;
+    		font-family:sans-serif;
+    		fonst-size:2rem;
+    		text-transform:capitalize;
+    		text-align:left;
+
+    	}
+
+    	.weather__icon{
+    		height: 50px;
+    		min-width:50px;
+    		width:50px;
+    	}
+    	.weather__min::after{
+    		content: " - ";
+    	}
+
+    	@media (min-width: 37.5em) {
+    		.weather{
+    			align-items:center;
+    			flex-direction:row;
+    			justify-content:space-between;
+    		}
+    		.weather > div{
+    			margin:  0 50px;
+
+    		}
+    		.weather__period{
+    			font-size:1.5rem;
+    			min-width:50px;
+    			text-align:left;
+    		}
+    		.span::after{
+    			content:" ";
+    		}
+    		.weather__minmax{
+    			display:flex;
+    			flex-direction:column;
+    		}
+    		.weather__min::after{
+    			content: " ";
+    		}
+    	}
+    	@media (min-width:56.25em){
+    		.container{
+    			display: flex;
+    			justify-content:center;
+    		}
+    		.weather{
+    			flex-basis:100px;
+    			flex-direction:column;
+    		}
+    		.weather > div{
+    			margin: 10px 0;
+    		}
+    		.weather__period{
+    			flex-basis:100px;
+    		}
+    	}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="weather">
+      <div class="weather__period">Manhã</div>
+      <div class="weather__icon">
+        <img src="https://image.flaticon.com/icons/svg/899/899683.svg" alt="thunder weather">
+      </div>
+      <div class="weather__minmax">
+        <span class="weather__min">16&ordm;</span>
+        <span class="weather__max">25&ordm;</span>
+      </div>
+      <div class="weather__hr">HR 85%</div>
+    </div>
+    
+    <div class="weather">
+      <div class="weather__period">tarde</div>
+      <div class="weather__icon">
+        <img src="https://image.flaticon.com/icons/svg/899/899683.svg" alt="sun and clouds">
+      </div>
+      <div class="weather__minmax">
+        <span class="weather__min">16&ordm;</span>
+        <span class="weather__max">25&ordm;</span>
+      </div>
+      <div class="weather__hr">HR 85%</div>
+    </div>
+    
+    <div class="weather">
+      <div class="weather__period">noite</div>
+      <div class="weather__icon">
+        <img src="https://image.flaticon.com/icons/svg/899/899681.svg" alt="clouds">
+      </div>
+      <div class="weather__minmax">
+        <span class="weather__min">16&ordm;</span>
+        <span class="weather__max">25&ordm;</span>
+      </div>
+      <div class="weather__hr">HR 85%</div>
+    </div>
+    
+    <div class="weather">
+      <div class="weather__period">madruga</div>
+      <div class="weather__icon">
+        <img src="https://image.flaticon.com/icons/svg/899/899683.svg" alt="thunder weather">
+      </div>
+      <div class="weather__minmax">
+        <span class="weather__min">16&ordm;</span>
+        <span class="weather__max">25&ordm;</span>
+      </div>
+      <div class="weather__hr">HR 85%</div>
+    </div>
+  </div>
+</body>
+</html>
